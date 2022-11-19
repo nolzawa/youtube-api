@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Top 5 Youtube</title>
+</head>
+<body>
+<div class="container mx-auto shadow-xl rounded-b-lg">
+    <h1 class="text-center text-2xl p-3 inset-x-0 top-0 bg-red-700 text-white rounded-b-lg">5 Most Popular Youtube Videos</h1>
+    <div class="ml-11 p-3 mt-5" id="ytData">Select a Region and click 'Fetch Me'.</div>
+    <div class="regionSelect p-3 m-3">
+        <label for="region">Select a Region:</label>
+        <select class="border-slate-800" name="region" id="region">
+            <option value="SG" selected>Singapore</option>
+            <option value="US">USA</option>
+            <option value ="JP">Japan</option>
+            <option value ="KR">South Korea</option>
+        </select>
+    </div>
+    <button class="p-2 w-1/6 ml-5 mb-5 bg-red-700 text-white rounded-md" onclick="fetchAPI()">Fetch Me</button>
+</div>
+</body>
+<script src="script.js"></script>
+</html>
